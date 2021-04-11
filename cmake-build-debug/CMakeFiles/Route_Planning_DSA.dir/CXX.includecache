@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/moin_11/CLionProjects/Route-Planning-DSA/main.cpp
+iostream
+-
+stack
+-
+queue
+-
+vector
+-
+string
+-
+utility
+-
+fstream
+-
+cctype
+-
+cstring
+-
+

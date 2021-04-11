@@ -22,9 +22,11 @@ private:
 
     char name;
 
+
+
 public:
 
-    /* Constructors*/
+    /* Constructors */
 
 
     // default constructor
@@ -34,9 +36,7 @@ public:
 
                   isVisited{false}, hasParents{false}, // bool checks -> false
 
-                  name{' '}
-
-    {};
+                  name{' '} {};
 
 
 
@@ -50,6 +50,28 @@ public:
     isVisited{false}, hasParents{false}, // bool checks -> false
 
     name{' '} {};
+
+
+
+
+
+
+    /* << Operator overload*/
+
+
+  friend std::ostream& operator<<( std::ostream& os, Location location) {
+
+
+        os << "(" << location.x_coord + 1<< "," <<location.y_coord + 1<< ")\t";
+
+        return os;
+
+
+    }
+
+
+
+
 
 
     /* Getters and Setters */
@@ -172,13 +194,17 @@ public:
     }
 
 
-    bool getHasParents(){
+    bool getHasParents() const{
         return hasParents;
     }
 
     void setHasParents(bool boolean){
         hasParents = boolean;
     }
+
+
+
+
 
 };
 
